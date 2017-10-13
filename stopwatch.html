@@ -68,8 +68,6 @@
       if(localStorage.startStop == 'stopped') {
         localStorage.startStop == 'started';
         document.getElementById("start-stop-button").innerHTML = "Stop";
-        setInterval(function stpwtch() {localStorage.stpwtchTime = localStorage.stpwtchTime + 0.01;
-                                        document.getElementById("clock-disp").innerHTML = localStorage.stpwtchTime;}, 10)
       } else {
         localStorage.stpwtchTime = 0;
         document.getElementById("clock-disp").innerHTML = localStorage.stpwtchTime;
@@ -77,5 +75,6 @@
         document.getElementById("start-stop-button").innerHTML = "Start";
       }
     }
+    
   </script>
 </html>
